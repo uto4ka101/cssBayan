@@ -73,7 +73,8 @@ summary {
 }
 
 summary:focus {
-  outline: none;
+   color: #141415;
+}
   
 }
 
