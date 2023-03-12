@@ -29,6 +29,7 @@ details {
 
 details + details {
   margin-top: 20px;
+  
 }
 
 details[open] {
@@ -98,19 +99,35 @@ summary::-webkit-details-marker {
   fill: rebeccapurple;
   transition: .3s ease;
   pointer-events: none;
+  transform: rotate(45deg);
+  display:none;
 }
 
+.holder:hover .control-icon-close {
+    display:block;
+}
+/*
+.holder:hover .acordion_content  {
+  display:block;
+}
+*/
+.holder:hover .acordion_content  {
+  display:block;
+}
 .control-icon-close {
   display: none;
 }
 
 details[open] .control-icon-close {
-  display: initial;
+  display: none;
   transition: .3s ease;
+  transform: rotate(90deg);
+  
 }
 
 details[open] .control-icon-expand {
   display: none;
+  transition: .3s ease;
 }
 .footer
 {
@@ -201,9 +218,10 @@ details[open] .control-icon-expand {
     max-width: 100%;
     height: auto;
     position: relative;
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    
+    
 }
 
 .acordion_content
@@ -227,4 +245,28 @@ details[open] .control-icon-expand {
   color: #717171;
   background-color: #706c6c;
   align:center;
+  display: none;
+}
+.acordion_content1
+{
+  --bg-green: #edf2ec;
+  --bg-white: #ffffff;
+  --accent-red: #e06733;
+  --accent-green: #499a18;
+  --main-text: #636060;
+  font-family: "Inter", sans-serif;
+  padding: 0px;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 6px;
+  padding-bottom: 12px;
+  margin: 0px 39px 0px 39px;
+  border-top: 0.5px solid #aea1a1;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #717171;
+  background-color: #706c6c;
+  align:center;
+  display: none;
 }
