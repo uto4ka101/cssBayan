@@ -20,11 +20,11 @@ details {
   margin: 0 auto;
   position: relative;
   font-size: 22px;
-  box-sizing: border-box;
-  transition: all .3s;
   border-top: 0.5px solid #aea1a1;
   /*border: 1px solid rgba(0,0,0,.1);
   border-radius: 15px;*/
+  box-sizing: border-box;
+  transition: all .3s;
 }
 
 details + details {
@@ -35,6 +35,7 @@ details[open] {
   min-height: 50px;
   background-color: #f6f7f8;
   box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+  text-decoration-color: #e06733;
 }
 
 details p {
@@ -85,7 +86,8 @@ summary:focus::after {
   position: absolute;
   top: 0;
   left: 0;
-  box-shadow: 0 0 0 5px rebeccapurple;
+  /*box-shadow: 0 0 0 5px rebeccapurple;
+  color: #1e1f1f;*/
 }
 
 summary::-webkit-details-marker {
@@ -181,7 +183,8 @@ details[open] .control-icon-expand {
   list-style-type: none;
   padding-left: 0;
 }
-.accordion_btn{
+.accordion_btn
+{
   --bg-green: #edf2ec;
     --bg-white: #ffffff;
     --accent-red: #e06733;
@@ -200,7 +203,7 @@ details[open] .control-icon-expand {
     position: relative;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .acordion_content
