@@ -4,12 +4,14 @@ body {
 }
 
 h2 {
-  margin: 20px auto 80px;
+  margin: 20px auto 20px;
   font-size: 38px;
   font-weight: 300;
-  text-align: center;
+  
   letter-spacing: 2px;
   line-height: 1.5;
+  PADDING: 5px 5px 5px 85px;
+   
 }
 
 details {
