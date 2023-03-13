@@ -6,7 +6,8 @@ body {
 h2 {
   margin: 20px auto 20px;
   font-size: 38px;
-  font-weight: 300;  
+  font-weight: 300;
+  
   letter-spacing: 2px;
   line-height: 1.5;
   PADDING: 5px 5px 5px 308px;
@@ -61,10 +62,10 @@ details p {
   line-height: 40px;
   color: #fbfbfb;
   padding-bottom: 12px;
-  text-align: left;
+  text-align: center;
   font-size: 35px;
   margin-bottom: 25px;
-  margin-top: 0;;
+  margin-top: 0;
 }
 summary {
   display: flex;
@@ -201,6 +202,7 @@ details[open] .control-icon-expand {
   list-style-type: none;
   padding-left: 0;
 }
+
 .accordion_btn
 {
   --bg-green: #edf2ec;
@@ -215,16 +217,29 @@ details[open] .control-icon-expand {
     border: none;
     box-sizing: border-box;
     vertical-align: top;
-    align: center;
+    text-align: center;
     max-width: 100%;
     height: auto;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
     
     
+    
+}/*
+.accordion_btn {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility 0s, opacity 0.5s linear;
 }
-
+*/
 .acordion_content
 {
   --bg-green: #edf2ec;
@@ -245,7 +260,6 @@ details[open] .control-icon-expand {
   line-height: 10px;
   color: #717171;
   background-color: #706c6c;
-  align:center;
   display: none;
 }
 .acordion_content1
@@ -312,5 +326,6 @@ details[open] .control-icon-expand {
     font-size: 29px;
     margin-bottom: 14px;
     margin-top: 0;
+    align-items: center;
 }
 }
