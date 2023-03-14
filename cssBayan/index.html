@@ -1,117 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon.ico">
-    <link rel="manifest" href="./ico/favicon/site.webmanifest">
-    <title>Css Bayan</title>
-    <link rel="stylesheet" href="style.css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Accordion</title>
 </head>
+
 <body>
-<h2>Css Bayan</h2>
-<div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
-  <svg xmlns="http://www.w3.org/2000/svg">
-    <symbol viewBox="0 0 24 24" id="close">
-      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-      <path d="M0 0h24v24H0z" fill="none"/>
-    </symbol>
-    
-    <symbol viewBox="0 0 24 24" id="expand-more">
-      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-      <path d="M0 0h24v24H0z" fill="none"/>
-    </symbol>
-  </svg>
-</div>
-<div class='holder'>
-<details open>
-  <summary>
-    You can't just copy and paste CSS
-    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
-      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-  </summary>
+   <div class="accordionwraper">
+      <div class="accordion">
+         <div class="wrapertitle">
+            <h2 class="title">CSS Bayan</h2>
+         </div>
+         <div class="tab">
+            <input type="checkbox" id="tab1" name="tab-group">
+            <label for="tab1" class="tab-title">You can't just copy and paste CSS</label>
+            <section class="tab-content flexbox">
+               <div class="boximg foto1"><span class="effect-blackblur">You can't just copy and paste CSS</span></div>
+            </section>
+         </div>
+         <div class="tab">
+            <input type="checkbox" id="tab2" name="tab-group">
+            <label for="tab2" class="tab-title">Keep calm and carry on</label>
+            <section class="tab-content">
+               <div class="boximg foto2"><span class="effect-blackblur">Keep calm and carry on</span></div>
+            </section>
+         </div>
+         <div class="tab">
+            <input type="checkbox" id="tab3" name="tab-group">
+            <label for="tab3" class="tab-title">Work-life balance</label>
+            <section class="tab-content">
+               <div class="boximg foto3"><span class="effect-blackblur">Work-life balance</span></div>
+            </section>
+         </div>
+         <div class="tab">
+            <input type="checkbox" id="tab4" name="tab-group">
+            <label for="tab4" class="tab-title">Dude, where is JS?</label>
+            <section class="tab-content">
+               <div class="boximg foto4"><span class="effect-blackblur">Dude, where is JS?</span></div>
+            </section>
+         </div>
+         <div class="tab">
+            <input type="checkbox" id="tab5" name="tab-group">
+            <label for="tab5" class="tab-title">Relax and take it easy</label>
+            <section onclick="href = ''" class="tab-content">
+               <div onclick="href = ''" class="boximg foto5"><span class="effect-blackblur">Relax and take it easy</span></div>
+            </section>
+         </div>
+      </div>
+      
+   </div><footer class="footer">
+      <div class="footer__row">
+       
+       <div class="footer-wrapper">
+         <ul class="footer__data">
+           <li>©</li>
+           <li>2022</li>
+           <li><a href="https://github.com/uto4ka101" class="github nav-link">github</a></li>
+         </ul>
+         <div class="rs">
+         <a href="https://rs.school/js/" class="rss">Rolling Scopes School</a>
+         </div>
+         <ul class="footer__icons">
+           <li>
+             <a href="http://facebook.com"><img src="./img/fb1.jpg" alt="facebook"></a>
+           </li>
+           <li>
+             <a href="!#"><img src="./img/inst1.jpg" alt="instagram"></a>
+           </li>
+           <li>
+             <a href="!#"><img src="./img/pinterest1.jpg" alt="pinterest"></a>
+           </li>
+           <li>
+             <a href="!#"><img src="./img/tw1.jpg" alt="twitter"></a>
+           </li>
+         </ul>
+     </div> 
+   
+  </footer>
   
-  <div class="acordion_content">
-  <h1 class="header-text">You can't just copy and paste CSS</h1>
-  <img src="./img/svg/image.svg" alt="" class="accordion_btn"></div>
-</details>
-
-<details>
-
-  <summary>
-    Keep calm and carry on
-    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-  </summary>
-  <div class="acordion_content">
-    <h1 class="header-text">Keep calm and carry on</h1>
-  <img src="./img/svg/image2.svg" alt="" class="accordion_btn"></div>
-</details>
-
-<details>
-  <summary>
-    Work-life balance   
-    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-  </summary>
-  <div class="acordion_content">
-    <h1 class="header-text">Work-life balance</h1>
-  <img src="./img/svg/image3.svg" alt="" class="accordion_btn"></div>
-</details>
-
-<details>
-    <summary>
-      Dude, where is JS?  
-      <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-      <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-    </summary>
-    <div class="acordion_content">
-        <h1 class="header-text">Dude, where is JS? </h1>
-    <img src="./img/svg/image1.svg" alt="" class="accordion_btn"></div>
-</details>
-<details>
-    <summary>
-      Relax and take it easy  
-      <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" /></svg>
-      <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" /></svg>
-    </summary>
-    <div class="acordion_content">
-        <h1 class="header-text">Relax and take it easy</h1>
-    <img src="./img/svg/image4.svg" alt="" class="accordion_btn"></div>
-</details>
-</div>
-<footer class="footer">
-    <div class="footer__row">
-     
-     <div class="footer-wrapper">
-       <ul class="footer__data">
-         <li>©</li>
-         <li>2022</li>
-         <li><a href="https://github.com/uto4ka101" class="github nav-link">github</a></li>
-       </ul>
-       <div class="rs">
-       <a href="https://rs.school/js/" class="rss">Rolling Scopes School</a>
-       </div>
-       <ul class="footer__icons">
-         <li>
-           <a href="!#"><img src="./img/fb1.jpg" alt="facebook"></a>
-         </li>
-         <li>
-           <a href="!#"><img src="./img/inst1.jpg" alt="instagram"></a>
-         </li>
-         <li>
-           <a href="!#"><img src="./img/pinterest1.jpg" alt="pinterest"></a>
-         </li>
-         <li>
-           <a href="!#"><img src="./img/tw1.jpg" alt="twitter"></a>
-         </li>
-       </ul>
-   </div> 
- </div>
-</footer>
 </body>
+
 </html>
